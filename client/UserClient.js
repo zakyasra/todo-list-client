@@ -6,3 +6,14 @@ export const register = (body) => {
     method: "POST"
   });
 };
+
+export const login = (body) => {
+  return client("login", {
+    body,
+    method: "POST"
+  });
+};
+
+export const profile = () => {
+  return client("profile");
+};
